@@ -80,16 +80,42 @@
 
 % Used to create large resume section
 \newenvironment{rSection}[1]{
+  \vspace{-1em}
   \sectionskip
   \MakeUppercase{\bf #1}
   \sectionlineskip
   \hrule
   \begin{list}{}{
+    \vspace{-0.1em}
     \setlength{\leftmargin}{1.5em}
   }
   \item[]
 }{
   \end{list}
+}
+
+\newenvironment{rSummary}[1]{
+  \vspace{0.5em}
+  \begin{list}{$\cdot$}{\leftmargin=1.0em}
+  \itemsep -0.5em \vspace{-0.5em}
+    {#1}
+  \end{list}
+  \vspace{0.1em}
+}
+
+% Used to format job listing
+\newenvironment{rProjectSection}[2]{
+  %%%%%%%%%%%%%%%%%%%%%% Default Layout: %%%%%%%%%%%%%%%%%%%%%%%%
+  %%    Employer (bold)               Description (regular)    %%
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  {\bf #1}                 \hfill                  {    #2}% Stop a space
+  \smallskip
+  % \cdot used for bullets, items non-indented
+  \begin{list}{$\cdot$}{\leftmargin=0em}
+  \itemsep -0.5em \vspace{-0.5em}
+}{
+  \end{list}
+  \vspace{0.5em}
 }
 
 % Used to format job listing
@@ -111,7 +137,7 @@
   \vspace{0.5em}
 }
 
-\def\namesize{\huge}
+\def\namesize{\LARGE}
 \def\nameskip{\medskip}
 \def\addressskip{\smallskip}
 \def\sectionskip{\bigskip}

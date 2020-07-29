@@ -1,60 +1,70 @@
 \documentclass{resume}
 
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage[left=0.5in,top=0.25in,right=0.5in,bottom=0.25in]{geometry}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
 
-\name{John Q. Public}
-\address{ 4489 Oxford Lane \\ San Antonio, PA 90024  }
-\address{ 555~$\cdot$~356~$\cdot$~7936 \\ jpublic@example.edu }
+\name{Arun Ranganathan}
+\address{\href{mailto:arun.ranga@hotmail.ca}{arun.ranga@hotmail.ca}\ \\
+         \href{https://www.linkedin.com/in/arun-ranganathan-860674b1/}{in/arunranganathan} \\
+         \href{https://github.com/Arun4rangan}{github.com/Arun4rangan}}
 
-\def\nameskip{\bigskip}
-\def\sectionskip{\medskip}
-
+\vspace{-1em}
 \begin{document}
-
+  \begin{rSection}{Summary}
+    \begin{rSummary}
+    {
+      \item Experience building distributed systems, real-time applications, computer vision applications, \\ android development.
+      \item C\texttt{++} (Linux \& Windows), Python, Java (Android), JavaScript, SQL, Golang, C
+      \item Node, Django, Angular 2, AngularJS, CloudSQL, PostgreSQL, MySQL, RabbitMQ, Redis, Kubernetes,\\ OpenShift, Celery, gRPC, TensorRT, TensorFlow, OpenVINO, OpenCV, NumPy
+    }
+    \end{rSummary}
+  \end{rSection}
   \begin{rSection}{Education}
-    {\bf University of California, Berkeley} \hfill {\em June 2004} \\ 
-    { B.S. in Computer Science \& Engineering } \\
-    { Minor in Linguistics } \smallskip \\
-    { Member of Eta Kappa Nu } \\
-    { Member of Upsilon Pi Epsilon } \\
-    Overall GPA: 5.678
+    {\bf University of Waterloo} \hfill {\em April 2019} \\ 
+    { Bachelor of Applied Science in Honours Nanotechnology Engineering With Distinction }
   \end{rSection}
-  
   \begin{rSection}{Experience}
-  
-    \begin{rSubsection}{ACME, Inc}{October 2010 - Present}{Web Developer}{Palo Alto, CA}
-    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.
-    \item Donec et mollis dolor. Praesent et diam eget libero Adobe Coldfusion egestas mattis sit amet vitae augue.
-    \item Nam tincidunt congue enim, ut porta lorem Microsoft SQL lacinia consectetur.
-    \item Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    \item Pellentesque auctor nisi id magna consequat JavaScript sagittis.
-    \item Aliquam at massa ipsum. Quisque bash bibendum purus convallis nulla ultrices ultricies.
-    \end{rSubsection}
-  
-    \begin{rSubsection}{AJAX Hosting}{December 2009 - October 2010}{Lead Developer}{Austin, TX}
-    \item Aenean ut gravida lorem. Ut turpis felis, Perl pulvinar a semper sed, adipiscing id dolor.
-    \item Curabitur dapibus enim sit amet elit pharetra tincidunt website feugiat nisl imperdiet. Ut convallis AJAX libero in urna ultrices accumsan.
-    \item Cum sociis natoque penatibus et magnis dis MySQL parturient montes, nascetur ridiculus mus.
-    \item In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
-    \item Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper.
-    \end{rSubsection}
 
-    \begin{rSubsection}{TinySoft}{January 2008 - April 2010}{Web Designer \& Developer}{Gainesville, GA}
-    \item Vivamus PostgreSQL fermentum semper porta. Nunc diam velit PHP, adipiscing ut tristique vitae
-    \item Maecenas convallis ullamcorper ultricies stylesheets.
-    \item Quisque mi metus, unit tests CSS ornare sit amet fermentum et, tincidunt et orci.
-    \item Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id
+    \begin{rSubsection}{Paravision}{April 2019 – Present}{Computer Vision Engineer}{Toronto, ON}
+    \item Architect parallel system for face detection on video streams. Reduced IPC bottleneck with MMAP and asynchronous programming, amplifying number of frames processed from 40 fps to 100 fps.
+    \item Create ETL pipeline on Kubernetes on GCP for image datasets. Quadruple throughput for pre-processing images, processed 8 million images per day.
+    \item Configure Openshift platform to host micro-services on bare-metal.
+    \item Engineered RESTful features such as grouping and identities on face recognition.
+    \item Experience building real-time computer vision systems using OpenCV, Tensorflow, and with accelerators such as TensorRT and OpenVINO on Windows and Linux OS.
     \end{rSubsection}
-  
+    \vspace{-1em}
+    \begin{rSubsection}{The League}{May 2018 – Augest 2018}{Backend Developer}{San Francisco, CA}
+    \item Develop core micro-services that replaced parts of monolithic backend deployed in GCP Kubernetes.
+    \item Reduce number of calls to PostgreSQL by implementing trigger based caching.
+    \item Create unit and E2E testing to support integration of micro-services.
+    \end{rSubsection}
+    \vspace{-1em}
+    \begin{rSubsection}{The League}{January 2018 – April 2018 }{Android Engineer}{San Francisco, CA}
+    \item Rewrite the messaging platform. Optimize how messages are received, stored and managed.
+    \item Increase user activity by developing custom photo-messaging capabilities in chats and optimizing the loading and uploading of photo-messages.
+    \end{rSubsection}
+    \vspace{-1em}
+    \begin{rSubsection}{Aspire Financial Technologies}{Augest 2016 – April 2017}{Backend Developer}{Toronto, ON}
+    \item Develop query-able RESTful API endpoints on Django.
+    \item Engineer aggregating algorithms that compile into complex financial math on PostgreSQL and optimized it to run in real time.
+    \end{rSubsection}
   \end{rSection}
-  
-  \begin{rSection}{Technical Strengths}
-    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-      Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
-      Protocols \& APIs & XML, JSON, SOAP, REST \\
-      Databases & MySQL, PostgreSQL, Microsoft SQL \\
-      Tools & SVN, Vim, Emacs
-    \end{tabular}
+
+  \begin{rSection}{Open Source / Projects}
+    \begin{rProjectSection}{\href{https://github.com/redis/redis}{\textbf{Redis}}}{In-memory Database}
+      \item Show threading configuration in INFO output \href{https://github.com/redis/redis/pull/7446}{ \textbf{\#7446} } \& \href{https://github.com/redis/redis-doc/pull/1353}{\textbf{\#1353}}
+    \end{rProjectSection}
+    \vspace{-1em}
+    \begin{rProjectSection}{\href{https://github.com/cockroachdb/cockroach}{\textbf {CockroachDB}}}{Distributed SQL Database}
+      \item Add support for Pow binary operator for vectorized execution engine \href{https://github.com/cockroachdb/cockroach/pull/50143}{\textbf{\#50143}}
+      \item Add ability insert DB2 formatted timestamps \href{https://github.com/cockroachdb/cockroach/pull/50011}{\textbf{\#50011}}
+      \item Coerce invalid geography coordinates into geometry \href{https://github.com/cockroachdb/cockroach/pull/50457}{\textbf{\#50457}}
+    \end{rProjectSection}
+    \vspace{-1em}
+    \begin{rProjectSection}{\href{https://github.com/pinojs/pino}{\textbf{Pino}}}{Low overhead Node.js Logger}
+      \item Allow custom levels to override default and allow to remove default levels \href{https://github.com/pinojs/pino/pull/515}{ \textbf{\#515} }
+      \item Add ability to change level name when creating the instance \href{https://github.com/pinojs/pino/pull/515}{ \textbf{\#503} }
+    \end{rProjectSection}
   \end{rSection}
 
 \end{document}
