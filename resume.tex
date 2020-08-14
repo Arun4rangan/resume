@@ -1,4 +1,7 @@
 \documentclass{resume}
+\input{glyphtounicode}
+
+\pdfgentounicode=1
 
 \usepackage[left=0.5in,top=0.25in,right=0.5in,bottom=0.25in]{geometry}
 \usepackage[colorlinks=true, linkcolor=black, urlcolor=black]{hyperref}
@@ -13,27 +16,25 @@
   \begin{rSection}{Summary}
     \begin{rSummary}
     {
-      \item Experience building distributed systems, real-time applications, computer vision applications, \\ android development.
-      \item C\texttt{++} (Linux \& Windows), Python, Java (Android), JavaScript, SQL, Golang, C
-      \item Node, Django, Angular 2, AngularJS, CloudSQL, PostgreSQL, MySQL, RabbitMQ, Redis, Kubernetes,\\ OpenShift, Celery, gRPC, TensorRT, TensorFlow, OpenVINO, OpenCV, NumPy
+      \item Experience building and maintaining robust distributed scalable systems.
+      \item C\texttt{++} (CMake), Python, Java (Android), JavaScript, SQL, Golang, C, NodeJS
+      \item Node.js, Django, Angular 2, AngularJS, CloudSQL, PostgreSQL, MySQL, RabbitMQ, Redis, Kubernetes,\\ OpenShift, Celery, gRPC, TensorRT, TensorFlow, OpenVINO, OpenCV, NumPy, Java, Protocol Buffers
     }
     \end{rSummary}
   \end{rSection}
-  \begin{rSection}{Education}
-    {\bf University of Waterloo} \hfill {\em April 2019} \\ 
-    { Bachelor of Applied Science in Honours Nanotechnology Engineering With Distinction }
-  \end{rSection}
+
+  \vspace{-0.5em}
+
   \begin{rSection}{Experience}
 
     \begin{rSubsection}{Paravision}{April 2019 – Present}{Computer Vision Engineer}{Toronto, ON}
-    \item Architect parallel system for face detection on video streams. Reduced IPC bottleneck with MMAP and asynchronous programming, amplifying number of frames processed from 40 fps to 100 fps.
-    \item Create ETL pipeline on Kubernetes on GCP for image datasets. Quadruple throughput for pre-processing images, processed 8 million images per day.
-    \item Configure Openshift platform to host micro-services on bare-metal.
-    \item Engineered RESTful features such as grouping and identities on face recognition.
-    \item Experience building real-time computer vision systems using OpenCV, Tensorflow, and with accelerators such as TensorRT and OpenVINO on Windows and Linux OS.
+    \item Decreased latency by 19\% and improved throughput by 150\% by re-architecting streaming app with asynchronous networking and parallel computing principles.
+    \item Quadrupled throughput of ETL by scaling with Kubernetes speeding up model training time.
+    \item Constructed facial recognition gRPC server with clients in C\texttt{\#}, NodeJS, Python3 and C\texttt{++}.
+    \item Built liveness C\texttt{++} SDK on Windows and Linux using OpenCV, Tensorflow, TensorRT and OpenVINO.
     \end{rSubsection}
     \vspace{-1em}
-    \begin{rSubsection}{The League}{May 2018 – Augest 2018}{Backend Developer}{San Francisco, CA}
+    \begin{rSubsection}{The League}{May 2018 – August 2018}{Backend Developer}{San Francisco, CA}
     \item Develop core micro-services that replaced parts of monolithic backend deployed in GCP Kubernetes.
     \item Reduce number of calls to PostgreSQL by implementing trigger based caching.
     \item Create unit and E2E testing to support integration of micro-services.
@@ -50,6 +51,8 @@
     \end{rSubsection}
   \end{rSection}
 
+  \vspace{-0.5em}
+
   \begin{rSection}{Open Source / Projects}
     \begin{rProjectSection}{\href{https://github.com/redis/redis}{\textbf{Redis}}}{In-memory Database}
       \item Show threading configuration in INFO output \href{https://github.com/redis/redis/pull/7446}{ \textbf{\#7446} } \& \href{https://github.com/redis/redis-doc/pull/1353}{\textbf{\#1353}}
@@ -65,6 +68,21 @@
       \item Allow custom levels to override default and allow to remove default levels \href{https://github.com/pinojs/pino/pull/515}{ \textbf{\#515} }
       \item Add ability to change level name when creating the instance \href{https://github.com/pinojs/pino/pull/515}{ \textbf{\#503} }
     \end{rProjectSection}
+    \vspace{-1em}
+    \begin{rProjectSection}{\href{https://chrome.google.com/webstore/detail/gtasker-extension/lljekoepijafpdebkahcjdhbjaappami?hl=en-GB}{\textbf{gTasker}}}{Chrome Extension}
+      \item Create chrome extension to manage day to day tasks while browsing the internet. Performs CRUD operations on Google Oauth2 API and Google Calendar API. This Chrome Extension is published in Google Play Store.
+    \end{rProjectSection}
+    \vspace{-1em}
+    \begin{rProjectSection}{\href{https://github.com/Arun4rangan/GenoDonor}{\textbf{GenoDonor}}}{Genome encoding hackathon}
+      \item Worked with 3 other co-workers to create a front-end using React and Node.JS based backend. Create a Web App for sperm donors where users can filter and search for specific genome traits based on donor.
+    \end{rProjectSection}
+  \end{rSection}
+  
+  \vspace{-0.5em}
+
+  \begin{rSection}{Education}
+    {\bf University of Waterloo} \hfill {\em April 2019} \\ 
+    { Bachelor of Applied Science in Honours Nanotechnology Engineering With Distinction }
   \end{rSection}
 
 \end{document}

@@ -109,7 +109,6 @@
   %%    Employer (bold)               Description (regular)    %%
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   {\bf #1}                 \hfill                  {    #2}% Stop a space
-  \smallskip
   % \cdot used for bullets, items non-indented
   \begin{list}{$\cdot$}{\leftmargin=0em}
   \itemsep -0.5em \vspace{-0.5em}
@@ -131,7 +130,7 @@
   }\smallskip
   % \cdot used for bullets, items non-indented
   \begin{list}{$\cdot$}{\leftmargin=0em}
-  \itemsep -0.5em \vspace{-0.5em}
+  \itemsep -0.5em \vspace{-0.6em}
 }{
   \end{list}
   \vspace{0.5em}
