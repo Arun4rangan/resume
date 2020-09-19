@@ -28,8 +28,9 @@
   \begin{rSection}{Experience}
 
     \begin{rSubsection}{Paravision}{April 2019 – Present}{Computer Vision Engineer}{Toronto, ON}
-    \item Decreased latency by 19\% and improved throughput by 150\% by re-architecting streaming app with asynchronous networking and parallel computing principles.
-    \item Quadrupled throughput of ETL by scaling with Kubernetes speeding up model training time.
+    \item Decreased latency by 19\% (P95) and improved throughput by 150\% (P95) by re-architecting streaming app with asynchronous networking and parallel computing principles.
+    \item Quadrupled ETL throughput (2MM to 8MM) by scaling with Kubernetes speeding up model training time.
+    \item Configure Openshift platform to host micro-services on bare-metal.
     \item Constructed facial recognition gRPC server with clients in C\texttt{\#}, NodeJS, Python3 and C\texttt{++}.
     \item Built liveness C\texttt{++} SDK on Windows and Linux using OpenCV, Tensorflow, TensorRT and OpenVINO.
     \end{rSubsection}
@@ -37,7 +38,6 @@
     \begin{rSubsection}{The League}{May 2018 – August 2018}{Backend Developer}{San Francisco, CA}
     \item Develop core micro-services that replaced parts of monolithic backend deployed in GCP Kubernetes.
     \item Reduce number of calls to PostgreSQL by implementing trigger based caching.
-    \item Create unit and E2E testing to support integration of micro-services.
     \end{rSubsection}
     \vspace{-1em}
     \begin{rSubsection}{The League}{January 2018 – April 2018 }{Android Engineer}{San Francisco, CA}
@@ -66,7 +66,7 @@
     \vspace{-1em}
     \begin{rProjectSection}{\href{https://github.com/pinojs/pino}{\textbf{Pino}}}{Low overhead Node.js Logger}
       \item Allow custom levels to override default and allow to remove default levels \href{https://github.com/pinojs/pino/pull/515}{ \textbf{\#515} }
-      \item Add ability to change level name when creating the instance \href{https://github.com/pinojs/pino/pull/515}{ \textbf{\#503} }
+      \item Add ability to change level name when creating the instance \href{https://github.com/pinojs/pino/pull/503}{ \textbf{\#503} }
     \end{rProjectSection}
     \vspace{-1em}
     \begin{rProjectSection}{\href{https://chrome.google.com/webstore/detail/gtasker-extension/lljekoepijafpdebkahcjdhbjaappami?hl=en-GB}{\textbf{gTasker}}}{Chrome Extension}
