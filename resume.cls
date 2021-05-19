@@ -80,13 +80,13 @@
 
 % Used to create large resume section
 \newenvironment{rSection}[1]{
-  \vspace{-1em}
+  \vspace{-0.5em}
   \sectionskip
   \MakeUppercase{\bf #1}
   \sectionlineskip
   \hrule
   \begin{list}{}{
-    \vspace{-0.1em}
+    \vspace{0em}
     \setlength{\leftmargin}{1.5em}
   }
   \item[]
@@ -95,7 +95,7 @@
 }
 
 \newenvironment{rSummary}[1]{
-  \vspace{0.5em}
+  \vspace{1em}
   \begin{list}{$\cdot$}{\leftmargin=1.0em}
   \itemsep -0.5em \vspace{-0.5em}
     {#1}
